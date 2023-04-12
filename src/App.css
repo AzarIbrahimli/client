@@ -1,38 +1,122 @@
 .App {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   text-align: center;
+  background-color: #bad2e7;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.usersDisplay ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.usersDisplay li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #f2f2f2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.usersDisplay h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.usersDisplay p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+.header {
+  background-color: #cad6e2;
+  color: rgb(230, 29, 29);
+  padding: 20px;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin: 20px;
+}
+
+
+
+.form {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.usersDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+
+.user {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: left;
+}
+
+
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 1px;
+  width: 100%;
+  }
+  
+  button {
+  background-color: #0366d6;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
   }
-  to {
-    transform: rotate(360deg);
+  
+  button:hover {
+  background-color: #1c7ed6;
   }
-}
+  
+  button:active {
+  background-color: #115293;
+  }
+  
+  button:focus {
+  outline: none;
+  }
+  
+  .error {
+  color: red;
+  margin: 5px;
+  }
+  
+  .success {
+  color: green;
+  margin: 5px;
+  }
+  
